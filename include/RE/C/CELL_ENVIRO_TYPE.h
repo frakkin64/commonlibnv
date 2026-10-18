@@ -1,0 +1,42 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class CELL_ENVIRO_TYPE : std::int32_t
+	{
+		kCET_NONE = 0x0,
+		kCET_DEFAULT = 0x1,
+		kCET_GENERIC = 0x2,
+		kCET_PADDEDCELL = 0x3,
+		kCET_ROOM = 0x4,
+		kCET_BATHROOM = 0x5,
+		kCET_LIVINGROOM = 0x6,
+		kCET_STONEROOM = 0x7,
+		kCET_AUDITORIUM = 0x8,
+		kCET_CONCERTHALL = 0x9,
+		kCET_CAVE = 0xA,
+		kCET_ARENA = 0xB,
+		kCET_HANGAR = 0xC,
+		kCET_CARPETEDHALLWAY = 0xD,
+		kCET_HALLWAY = 0xE,
+		kCET_STONECORRIDOR = 0xF,
+		kCET_ALLEY = 0x10,
+		kCET_FOREST = 0x11,
+		kCET_CITY = 0x12,
+		kCET_MOUNTAINS = 0x13,
+		kCET_QUARRY = 0x14,
+		kCET_PLAIN = 0x15,
+		kCET_PARKINGLOT = 0x16,
+		kCET_SEWERPIPE = 0x17,
+		kCET_UNDERWATER = 0x18,
+		kCET_SMALLROOM = 0x19,
+		kCET_MEDIUMROOM = 0x1A,
+		kCET_LARGEROOM = 0x1B,
+		kCET_MEDIUMHALL = 0x1C,
+		kCET_LARGEHALL = 0x1D,
+		kCET_PLATE = 0x1E,
+		kCET_COUNT = 0x1F,
+	};
+}

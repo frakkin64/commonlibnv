@@ -1,0 +1,26 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+#include "RE/B/BSMapBase.h"
+#include "RE/B/BSMapItem.h"
+#include "RE/S/ScrapHeap.h"
+#include "RE/T/T.h"
+
+namespace RE
+{
+	template <class T, class U>
+	class BSScrapMap :
+		public BSMapBase<T, U>  // 00
+	{
+	public:
+		// override (BSMapBase<T, U>)
+		virtual ~BSScrapMap() = default;                   // 00
+		virtual BSMapItem<T, U>* NewItem();                // 05
+		virtual void DeleteItem(BSMapItem<T, U>* pkItem);  // 06
+
+		// members
+		U bClearOnDestruct;
+		ScrapHeap MapHeap;
+	};
+}

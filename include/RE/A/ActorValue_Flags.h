@@ -1,0 +1,26 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ActorValue_Flags : std::int32_t
+	{
+		kFAST_MODIFIER = 0x1,
+		kCREATURE_MAPPED = 0x2,
+		kEFFECT_SKILL = 0x4,
+		kMAX_TEN = 0x8,
+		kMAX_ONE_HUNDRED = 0x10,
+		kDAMAGE_MIN_ZERO = 0x20,
+		kDERIVED_PLUS_BASE = 0x40,
+		kDERIVED_IF_AUTOCALC = 0x80,
+		kENUMERATION = 0x100,
+		kDAMAGE_IS_POSITIVE = 0x200,
+		kCOMBAT_SKILL = 0x400,
+		kDERIVED_ALWAYS = 0x800,
+		kCREATURE_NOT_DERIVED = 0x1000,
+		kDEPRECATED = 0x2000,
+		kNO_SCRIPT_MODAV = 0x4000,
+		kMIN_ONE = 0x8000,
+	};
+}

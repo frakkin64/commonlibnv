@@ -1,0 +1,18 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class BGSDecalManager_DECAL_TYPE : std::int32_t
+	{
+		kDECAL_TYPE_NONE = 0x0,
+		kDECAL_TYPE_SIMPLE = 0x1,
+		kDECAL_TYPE_PROJECTED = 0x2,
+		kDECAL_TYPE_SKINNED = 0x3,
+		kDECAL_TYPE_PERMENANT_SIMPLE = 0x4,
+		kDECAL_TYPE_PERMENANT_PROJECTED = 0x5,
+		kDECAL_TYPE_PERMENANT_SKINNED = 0x6,
+		kDECAL_TYPE_COUNT = 0x7,
+	};
+}

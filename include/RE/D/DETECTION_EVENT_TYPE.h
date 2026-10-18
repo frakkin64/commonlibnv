@@ -1,0 +1,17 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class DETECTION_EVENT_TYPE : std::int32_t
+	{
+		kDETECTION_EVENT_NONE = -1,
+		kDETECTION_EVENT_BULLET = 0x0,
+		kDETECTION_EVENT_BEAM = 0x1,
+		kDETECTION_EVENT_EXPLOSION = 0x2,
+		kDETECTION_EVENT_GENERIC = 0x3,
+		kDETECTION_EVENT_BODY = 0x4,
+		kDETECTION_EVENT_COUNT = 0x5,
+	};
+}

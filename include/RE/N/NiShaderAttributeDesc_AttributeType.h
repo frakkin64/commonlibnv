@@ -1,0 +1,26 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class NiShaderAttributeDesc_AttributeType : std::int32_t
+	{
+		kATTRIB_TYPE_UNDEFINED = 0x0,
+		kATTRIB_TYPE_BOOL = 0x1,
+		kATTRIB_TYPE_STRING = 0x2,
+		kATTRIB_TYPE_UNSIGNEDINT = 0x3,
+		kATTRIB_TYPE_FLOAT = 0x4,
+		kATTRIB_TYPE_POINT2 = 0x5,
+		kATTRIB_TYPE_POINT3 = 0x6,
+		kATTRIB_TYPE_POINT4 = 0x7,
+		kATTRIB_TYPE_MATRIX3 = 0x8,
+		kATTRIB_TYPE_MATRIX4 = 0x9,
+		kATTRIB_TYPE_COLOR = 0xA,
+		kATTRIB_TYPE_TEXTURE = 0xB,
+		kATTRIB_TYPE_FLOAT8 = 0xC,
+		kATTRIB_TYPE_FLOAT12 = 0xD,
+		kATTRIB_TYPE_ARRAY = 0xE,
+		kATTRIB_TYPE_COUNT = 0xF,
+	};
+}

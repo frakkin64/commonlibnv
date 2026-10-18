@@ -1,0 +1,19 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class CAUSE_OF_DEATH : std::int32_t
+	{
+		kCAUSE_OF_DEATH_NONE = -1,
+		kCAUSE_OF_DEATH_EXPLOSION = 0x0,
+		kCAUSE_OF_DEATH_GUN = 0x1,
+		kCAUSE_OF_DEATH_BLUNT_WEAPON = 0x2,
+		kCAUSE_OF_DEATH_HAND_TO_HAND = 0x3,
+		kCAUSE_OF_DEATH_OBJECT_IMPACT = 0x4,
+		kCAUSE_OF_DEATH_POISON = 0x5,
+		kCAUSE_OF_DEATH_RADIATION = 0x6,
+		kCAUSE_OF_DEATH_COUNT = 0x7,
+	};
+}

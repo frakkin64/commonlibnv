@@ -1,0 +1,22 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ENUM_LOD_MULT : std::int32_t
+	{
+		kLOD_MULT_NONE = 0x0,
+		kLOD_MULT_OBJECTS = 0x1,
+		kLOD_MULT_ITEMS = 0x2,
+		kLOD_MULT_ACTORS = 0x3,
+		kLOD_MULT_TREES = 0x4,
+		kLOD_MULT_LANDSCAPE = 0x5,
+		kLOD_MULT_DISTANTLOD = 0x6,
+		kLOD_MULT_ACTOR_BODY_PART = 0x7,
+		kLOD_MULT_RENDEREDMENU = 0x8,
+		kLOD_MULT_INVISIBLE = 0x9,
+		kLOD_MULT_DIST_OVERRIDE = 0xA,
+		kLOD_MULT_TOTAL = 0xB,
+	};
+}

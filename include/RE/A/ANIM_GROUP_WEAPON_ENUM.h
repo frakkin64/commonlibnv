@@ -1,0 +1,23 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ANIM_GROUP_WEAPON_ENUM : std::int32_t
+	{
+		kAGW_NONE = 0x0,
+		kAGW_HAND_TO_HAND = 0x1,
+		kAGW_ONE_HAND_MELEE = 0x2,
+		kAGW_TWO_HAND_MELEE = 0x3,
+		kAGW_ONE_HAND_PISTOL = 0x4,
+		kAGW_TWO_HAND_RIFLE = 0x5,
+		kAGW_TWO_HAND_AUTOMATIC = 0x6,
+		kAGW_TWO_HAND_HANDLE = 0x7,
+		kAGW_TWO_HAND_LAUNCHER = 0x8,
+		kAGW_ONE_HAND_GRENADE = 0x9,
+		kAGW_ONE_HAND_MINE = 0xA,
+		kAGW_ONE_HAND_LUNCHBOX_MINE = 0xB,
+		kANIM_GROUP_WEAPON_COUNT = 0xC,
+	};
+}

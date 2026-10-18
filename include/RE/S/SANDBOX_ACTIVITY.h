@@ -1,0 +1,16 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class SANDBOX_ACTIVITY : std::int32_t
+	{
+		kSANDBOX_ACTIVITY_NONE = -1,
+		kSANDBOX_ACTIVITY_SLEEP = 0x0,
+		kSANDBOX_ACTIVITY_BREAKFAST = 0x1,
+		kSANDBOX_ACTIVITY_LUNCH = 0x2,
+		kSANDBOX_ACTIVITY_DINNER = 0x3,
+		kNUM_SANDBOX_ACTIVITIES = 0x4,
+	};
+}

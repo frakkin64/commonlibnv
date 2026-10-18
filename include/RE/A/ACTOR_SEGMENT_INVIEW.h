@@ -1,0 +1,15 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ACTOR_SEGMENT_INVIEW : std::int32_t
+	{
+		kACTOR_SEGMENT_INVIEW_BOTTOM = 0x0,
+		kACTOR_SEGMENT_INVIEW_MIDDLE = 0x1,
+		kACTOR_SEGMENT_INVIEW_TOP = 0x2,
+		kACTOR_SEGMENT_INVIEW_NONE = 0x3,
+		kACTOR_SEGMENT_INVIEW_GROUND = 0x4,
+	};
+}

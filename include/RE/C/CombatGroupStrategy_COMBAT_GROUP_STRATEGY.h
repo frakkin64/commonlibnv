@@ -1,0 +1,16 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class CombatGroupStrategy_COMBAT_GROUP_STRATEGY : std::int32_t
+	{
+		kCOMBAT_GROUP_STRATEGY_NONE = -1,
+		kCOMBAT_GROUP_STRATEGY_FALLBACK = 0x0,
+		kCOMBAT_GROUP_STRATEGY_ADVANCE = 0x1,
+		kCOMBAT_GROUP_STRATEGY_FLANK = 0x2,
+		kCOMBAT_GROUP_STRATEGY_AMBUSH = 0x3,
+		kCOMBAT_GROUP_STRATEGY_COUNT = 0x4,
+	};
+}

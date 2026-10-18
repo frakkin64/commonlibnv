@@ -1,0 +1,18 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ACQUIRE_TYPE : std::int32_t
+	{
+		kACQUIRE_TYPE_NONE = -1,
+		kACQUIRE_TYPE_NOOWNED_GROUND = 0x0,
+		kACQUIRE_TYPE_NOOWNED_CONTAINER = 0x1,
+		kACQUIRE_TYPE_BUY_NPC = 0x2,
+		kACQUIRE_TYPE_STEALGROUND = 0x3,
+		kACQUIRE_TYPE_PICKPOCKET = 0x4,
+		kACQUIRE_TYPE_KILL = 0x5,
+		kACQUIRE_TYPE_COUNT = 0x6,
+	};
+}

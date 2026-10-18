@@ -1,0 +1,28 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class hkSerializeUtil_FormatType : std::int32_t
+	{
+		kFORMAT_RGB = 0x0,
+		kFORMAT_RGBA = 0x1,
+		kFORMAT_PAL = 0x2,
+		kFORMAT_PALALPHA = 0x3,
+		kFORMAT_DXT1 = 0x4,
+		kFORMAT_DXT3 = 0x5,
+		kFORMAT_DXT5 = 0x6,
+		kFORMAT_RGB24NONINTERLEAVED = 0x7,
+		kFORMAT_BUMP = 0x8,
+		kFORMAT_BUMPLUMA = 0x9,
+		kFORMAT_RENDERERSPECIFIC = 0xA,
+		kFORMAT_ONE_CHANNEL = 0xB,
+		kFORMAT_TWO_CHANNEL = 0xC,
+		kFORMAT_THREE_CHANNEL = 0xD,
+		kFORMAT_FOUR_CHANNEL = 0xE,
+		kFORMAT_DEPTH_STENCIL = 0xF,
+		kFORMAT_UNKNOWN = 0x10,
+		kFORMAT_MAX = 0x11,
+	};
+}

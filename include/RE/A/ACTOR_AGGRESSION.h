@@ -1,0 +1,15 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ACTOR_AGGRESSION : std::int32_t
+	{
+		kACTOR_AGGRESSION_UNAGGRESSIVE = 0x0,
+		kACTOR_AGGRESSION_AGGRESSIVE = 0x1,
+		kACTOR_AGGRESSION_VERY_AGGRESSIVE = 0x2,
+		kACTOR_AGGRESSION_FRENZIED = 0x3,
+		kACTOR_AGGRESSION_NUMLEVELS = 0x4,
+	};
+}

@@ -1,0 +1,22 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class hkpCharacterStateType : std::int32_t
+	{
+		kHK_CHARACTER_ON_GROUND = 0x0,
+		kHK_CHARACTER_JUMPING = 0x1,
+		kHK_CHARACTER_IN_AIR = 0x2,
+		kHK_CHARACTER_CLIMBING = 0x3,
+		kHK_CHARACTER_FLYING = 0x4,
+		kHK_CHARACTER_USER_STATE_0 = 0x5,
+		kHK_CHARACTER_USER_STATE_1 = 0x6,
+		kHK_CHARACTER_USER_STATE_2 = 0x7,
+		kHK_CHARACTER_USER_STATE_3 = 0x8,
+		kHK_CHARACTER_USER_STATE_4 = 0x9,
+		kHK_CHARACTER_USER_STATE_5 = 0xA,
+		kHK_CHARACTER_MAX_STATE_ID = 0xB,
+	};
+}

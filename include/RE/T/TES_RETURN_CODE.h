@@ -1,0 +1,24 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class TES_RETURN_CODE : std::int32_t
+	{
+		kTES_ERROR_NONE = 0x0,
+		kTES_ERROR_NOT_FOUND = 0x1,
+		kTES_ERROR_NO_FILE = 0x2,
+		kTES_ERROR_NO_FORM = 0x3,
+		kTES_ERROR_NO_CHUNK = 0x4,
+		kTES_ERROR_NO_ID = 0x5,
+		kTES_ERROR_BAD_FILE = 0x6,
+		kTES_ERROR_BAD_ID = 0x7,
+		kTES_ERROR_FORM_OPEN = 0x8,
+		kTES_ERROR_FILE_OPEN = 0x9,
+		kTES_ERROR_WRITE_FAILURE = 0xA,
+		kTES_ERROR_INVALID_FILE = 0xB,
+		kTES_ERROR_FILE_IN_USE = 0xC,
+		kTES_ERROR_CREATE_FAILURE = 0xD,
+	};
+}

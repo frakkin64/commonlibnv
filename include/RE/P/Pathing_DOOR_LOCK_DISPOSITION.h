@@ -1,0 +1,14 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class Pathing_DOOR_LOCK_DISPOSITION : std::int32_t
+	{
+		kDOOR_LOCK_DISPOSITION_NORMAL = 0x0,
+		kDOOR_LOCK_DISPOSITION_IGNORELOCKS = 0x1,
+		kDOOR_LOCK_DISPOSITION_LOCKS_ARE_MINIMAL_USE = 0x2,
+		kDOOR_LOCK_DISPOSITION_RADIO = 0x3,
+	};
+}

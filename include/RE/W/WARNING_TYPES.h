@@ -1,0 +1,35 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class WARNING_TYPES : std::int32_t
+	{
+		kWARN_DEFAULT = 0x0,
+		kWARN_COMBAT = 0x1,
+		kWARN_ANIMATION = 0x2,
+		kWARN_AI = 0x3,
+		kWARN_SCRIPTS = 0x4,
+		kWARN_SAVELOAD = 0x5,
+		kWARN_DIALOGUE = 0x6,
+		kWARN_QUESTS = 0x7,
+		kWARN_PACKAGES = 0x8,
+		kWARN_EDITOR = 0x9,
+		kWARN_MODELS = 0xA,
+		kWARN_TEXTURES = 0xB,
+		kWARN_PLUGINS = 0xC,
+		kWARN_MASTERFILE = 0xD,
+		kWARN_FORMS = 0xE,
+		kWARN_MAGIC = 0xF,
+		kWARN_SHADERS = 0x10,
+		kWARN_PATHFINDING = 0x11,
+		kWARN_MENUS = 0x12,
+		kWARN_AUDIO = 0x13,
+		kWARN_CELLS = 0x14,
+		kWARN_HAVOK = 0x15,
+		kWARN_WATER = 0x16,
+		kWARN_INGAME_MESSAGE = 0x17,
+		kMAX_WARNING_TYPES = 0x18,
+	};
+}

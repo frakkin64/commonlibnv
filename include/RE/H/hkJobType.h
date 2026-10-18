@@ -1,0 +1,23 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class hkJobType : std::int32_t
+	{
+		kHK_JOB_TYPE_DYNAMICS = 0x0,
+		kHK_JOB_TYPE_COLLIDE = 0x1,
+		kHK_JOB_TYPE_COLLISION_QUERY = 0x2,
+		kHK_JOB_TYPE_RAYCAST_QUERY = 0x3,
+		kHK_JOB_TYPE_ANIMATION = 0x4,
+		kHK_JOB_TYPE_BEHAVIOR = 0x5,
+		kHK_JOB_TYPE_CLOTH = 0x6,
+		kHK_JOB_TYPE_PATHFINDING = 0x7,
+		kHK_JOB_TYPE_UNIT_TEST = 0x8,
+		kHK_JOB_TYPE_CHARACTER_PROXY = 0x9,
+		kHK_JOB_TYPE_HAVOK_MAX = 0xA,
+		kHK_JOB_TYPE_USER_0 = 0xA,
+		kHK_JOB_TYPE_MAX = 0xB,
+	};
+}

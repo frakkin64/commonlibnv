@@ -1,0 +1,57 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class Interface_enumMenus : std::int32_t
+	{
+		kENoMenu = 0x0,
+		kEMainFour = 0x1,
+		kEOtherRoot = 0x2,
+		kEConsoleMenu = 0x3,
+		kEFirstMenu = 0x3E9,
+		kEMessageMenu = 0x3E9,
+		kEInventoryMenu = 0x3EA,
+		kEStatsMenu = 0x3EB,
+		kEHUDMainMenu = 0x3EC,
+		kELoadingMenu = 0x3EF,
+		kEContainerMenu = 0x3F0,
+		kEDialogMenu = 0x3F1,
+		kESleepWaitMenu = 0x3F4,
+		kEStartMenu = 0x3F5,
+		kELockPickMenu = 0x3F6,
+		kEQuantityMenu = 0x3F8,
+		kEAudioMenu = 0x3F9,
+		kEVideoMenu = 0x3FA,
+		kEGameplayMenu = 0x3FC,
+		kEMapMenu = 0x3FF,
+		kEBookMenu = 0x402,
+		kELevelUpMenu = 0x403,
+		kEBirthSignMenu = 0x405,
+		kERepairMenu = 0x40B,
+		kERaceSexMenu = 0x40C,
+		kECreditsMenu = 0x417,
+		kECharGenMenu = 0x418,
+		kETextEditMenu = 0x41B,
+		kEBarterMenu = 0x41D,
+		kESurgeryMenu = 0x41E,
+		kEHackingMenu = 0x41F,
+		kEVATSMenu = 0x420,
+		kEComputersMenu = 0x421,
+		kERepairServicesMenu = 0x422,
+		kETutorialMenu = 0x423,
+		kESPECIALBookMenu = 0x424,
+		kEItemModMenu = 0x425,
+		kELoveTesterMenu = 0x432,
+		kECompanionWheelMenu = 0x433,
+		kETraitSelectMenu = 0x434,
+		kERecipeMenu = 0x435,
+		kESlotMachineMenu = 0x438,
+		kEBlackJackMenu = 0x439,
+		kERouletteMenu = 0x43A,
+		kECaravanMenu = 0x43B,
+		kETraitMenu = 0x43C,
+		kELastMenu = 0x43C,
+	};
+}

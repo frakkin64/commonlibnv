@@ -1,0 +1,40 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class PACKAGE_OBJECT_TYPE : std::int32_t
+	{
+		kPOTYPE_NONE = 0x0,
+		kPOTYPE_ACTI = 0x1,
+		kPOTYPE_ARMO = 0x2,
+		kPOTYPE_BOOK = 0x3,
+		kPOTYPE_CLOT = 0x4,
+		kPOTYPE_CONT = 0x5,
+		kPOTYPE_DOOR = 0x6,
+		kPOTYPE_INGR = 0x7,
+		kPOTYPE_LIGH = 0x8,
+		kPOTYPE_MISC = 0x9,
+		kPOTYPE_FLOR = 0xA,
+		kPOTYPE_FURN = 0xB,
+		kPOTYPE_WEAP = 0xC,
+		kPOTYPE_AMMO = 0xD,
+		kPOTYPE_NPC = 0xE,
+		kPOTYPE_CREA = 0xF,
+		kPOTYPE_KEYM = 0x10,
+		kPOTYPE_ALCH = 0x11,
+		kPOTYPE_FOOD = 0x12,
+		kPOTYPE_COMBATWEAR = 0x13,
+		kPOTYPE_WEAR = 0x14,
+		kPOTYPE_WEAP_NONE = 0x15,
+		kPOTYPE_WEAP_MELEE = 0x16,
+		kPOTYPE_WEAP_RANGED = 0x17,
+		kPOTYPE_SPELL = 0x18,
+		kPOTYPE_SPELL_RANGED = 0x19,
+		kPOTYPE_SPELL_TOUCH = 0x1A,
+		kPOTYPE_SPELL_SELF = 0x1B,
+		kPOTYPE_ACTOR = 0x1C,
+		kPOTYPE_COUNT = 0x1D,
+	};
+}

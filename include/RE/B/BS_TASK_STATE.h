@@ -1,0 +1,18 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class BS_TASK_STATE : std::int32_t
+	{
+		kBS_TASK_STATE_PENDING = 0x0,
+		kBS_TASK_STATE_QUEUED = 0x1,
+		kBS_TASK_STATE_MOVING = 0x2,
+		kBS_TASK_STATE_RUNNING = 0x3,
+		kBS_TASK_STATE_FINISHED = 0x4,
+		kBS_TASK_STATE_COMPLETED = 0x5,
+		kBS_TASK_STATE_CANCELED = 0x6,
+		kBS_TASK_STATE_FORCE_DWORD = 0x7FFFFFFF,
+	};
+}

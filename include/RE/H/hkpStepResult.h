@@ -1,0 +1,14 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class hkpStepResult : std::int32_t
+	{
+		kHK_STEP_RESULT_SUCCESS = 0x0,
+		kHK_STEP_RESULT_MEMORY_FAILURE_BEFORE_INTEGRATION = 0x1,
+		kHK_STEP_RESULT_MEMORY_FAILURE_DURING_COLLIDE = 0x2,
+		kHK_STEP_RESULT_MEMORY_FAILURE_DURING_TOI_SOLVE = 0x3,
+	};
+}

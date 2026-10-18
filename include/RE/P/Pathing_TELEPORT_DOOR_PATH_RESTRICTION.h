@@ -1,0 +1,14 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class Pathing_TELEPORT_DOOR_PATH_RESTRICTION : std::int32_t
+	{
+		kTELEPORT_DOOR_PATH_NONE = 0x0,
+		kTELEPORT_DOOR_PATH_START_SPACE_ONLY = 0x1,
+		kTELEPORT_DOOR_PATH_INTERIORS_ONLY = 0x2,
+		kTELEPORT_DOOR_PATH_FIND_FIRST_WORLDSPACE = 0x3,
+	};
+}

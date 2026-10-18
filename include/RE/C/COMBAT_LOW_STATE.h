@@ -1,0 +1,17 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class COMBAT_LOW_STATE : std::int32_t
+	{
+		kCOMBAT_LOW_STATE_NONE = 0x0,
+		kCOMBAT_LOW_STATE_ATTACKING = 0x1,
+		kCOMBAT_LOW_STATE_PURSUING = 0x2,
+		kCOMBAT_LOW_STATE_INVESTIGATING = 0x3,
+		kCOMBAT_LOW_STATE_SEARCHING = 0x4,
+		kCOMBAT_LOW_STATE_FLEEING = 0x5,
+		kCOMBAT_LOW_STATE_COUNT = 0x6,
+	};
+}

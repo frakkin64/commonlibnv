@@ -1,0 +1,45 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class hkDataObject_Type : std::int32_t
+	{
+		kTYPE_VOID = 0x0,
+		kTYPE_BYTE = 0x1,
+		kTYPE_INT = 0x2,
+		kTYPE_REAL = 0x3,
+		kTYPE_VEC_4 = 0x4,
+		kTYPE_VEC_8 = 0x5,
+		kTYPE_VEC_12 = 0x6,
+		kTYPE_VEC_16 = 0x7,
+		kTYPE_OBJECT = 0x8,
+		kTYPE_STRUCT = 0x9,
+		kTYPE_CSTRING = 0xA,
+		kTYPE_NUM_BASIC_TYPES = 0xB,
+		kTYPE_MASK_BASIC_TYPES = 0xF,
+		kTYPE_ARRAY = 0x10,
+		kTYPE_ARRAY_BYTE = 0x11,
+		kTYPE_ARRAY_INT = 0x12,
+		kTYPE_ARRAY_REAL = 0x13,
+		kTYPE_ARRAY_VEC_4 = 0x14,
+		kTYPE_ARRAY_VEC_8 = 0x15,
+		kTYPE_ARRAY_VEC_12 = 0x16,
+		kTYPE_ARRAY_VEC_16 = 0x17,
+		kTYPE_ARRAY_OBJECT = 0x18,
+		kTYPE_ARRAY_STRUCT = 0x19,
+		kTYPE_ARRAY_CSTRING = 0x1A,
+		kTYPE_TUPLE = 0x20,
+		kTYPE_TUPLE_BYTE = 0x21,
+		kTYPE_TUPLE_INT = 0x22,
+		kTYPE_TUPLE_REAL = 0x23,
+		kTYPE_TUPLE_VEC_4 = 0x24,
+		kTYPE_TUPLE_VEC_8 = 0x25,
+		kTYPE_TUPLE_VEC_12 = 0x26,
+		kTYPE_TUPLE_VEC_16 = 0x27,
+		kTYPE_TUPLE_OBJECT = 0x28,
+		kTYPE_TUPLE_STRUCT = 0x29,
+		kTYPE_TUPLE_CSTRING = 0x2A,
+	};
+}

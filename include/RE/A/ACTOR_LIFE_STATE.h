@@ -1,0 +1,17 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ACTOR_LIFE_STATE : std::int32_t
+	{
+		kACTOR_LIFE_STATE_ALIVE = 0x0,
+		kACTOR_LIFE_STATE_DYING = 0x1,
+		kACTOR_LIFE_STATE_DEAD = 0x2,
+		kACTOR_LIFE_STATE_UNCONSCIOUS = 0x3,
+		kACTOR_LIFE_STATE_REANIMATE = 0x4,
+		kACTOR_LIFE_STATE_RESTRAINED = 0x5,
+		kACTOR_LIFE_STATE_ESSENTIAL_DOWN = 0x6,
+	};
+}

@@ -1,0 +1,24 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class FutErrorCodeE : std::int32_t
+	{
+		kFUTERR_NONE = 0x0,
+		kFUTERR_FILE_CORRUPT = 0x1,
+		kFUTERR_FILE_INCORRECT_TYPE = 0x2,
+		kFUTERR_FILE_NOT_FOUND = 0x3,
+		kFUTERR_FILE_NOT_READABLE = 0x4,
+		kFUTERR_FILE_NOT_WRITEABLE = 0x5,
+		kFUTERR_FILE_WRITE_ERROR = 0x6,
+		kFUTERR_FILE_SEEK_ERROR = 0x7,
+		kFUTERR_OGL_INIT = 0x8,
+		kFUTERR_STATKEY_MISMATCH = 0x9,
+		kFUTERR_HEAP_NOALLOC = 0xA,
+		kFUTERR_SEE_TEXT = 0xB,
+		kFUTERR_IMAGE_NOT_POWER2 = 0xC,
+		kFUTERR_SIZE = 0xD,
+	};
+}

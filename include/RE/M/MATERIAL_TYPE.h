@@ -1,0 +1,48 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class MATERIAL_TYPE : std::int32_t
+	{
+		kMT_STONE = 0x0,
+		kMT_CLOTH = 0x1,
+		kMT_DIRT = 0x2,
+		kMT_GLASS = 0x3,
+		kMT_GRASS = 0x4,
+		kMT_METAL = 0x5,
+		kMT_ORGANIC = 0x6,
+		kMT_SKIN = 0x7,
+		kMT_WATER = 0x8,
+		kMT_WOOD = 0x9,
+		kMT_HEAVYSTONE = 0xA,
+		kMT_HEAVYMETAL = 0xB,
+		kMT_HEAVYWOOD = 0xC,
+		kMT_CHAIN = 0xD,
+		kMT_BOTTLECAP = 0xE,
+		kMT_ELEVATOR = 0xF,
+		kMT_METAL_HOLLOW = 0x10,
+		kMT_METAL_SHEET = 0x11,
+		kMT_SAND = 0x12,
+		kMT_CONCRETE_BROKEN = 0x13,
+		kMT_VEHICLE_BODY = 0x14,
+		kMT_VEHICLE_PART_SOLID = 0x15,
+		kMT_VEHICLE_PART_HOLLOW = 0x16,
+		kMT_BARREL = 0x17,
+		kMT_BOTTLE = 0x18,
+		kMT_SODA_CAN = 0x19,
+		kMT_PISTOL = 0x1A,
+		kMT_RIFLE = 0x1B,
+		kMT_SHOPPING_CART = 0x1C,
+		kMT_LUNCHBOX = 0x1D,
+		kMT_BABY_RATTLE = 0x1E,
+		kMT_RUBBER_BALL = 0x1F,
+		kMT_CHAINLINK = 0x20,
+		kMT_TILE = 0x21,
+		kMT_CARPET = 0x22,
+		kMT_TUMBLEWEED = 0x23,
+		kMT_TOTAL = 0x24,
+		kMT_INVALID = 0x24,
+	};
+}

@@ -1,0 +1,21 @@
+#pragma once
+
+#include "NVSE/Impl/Windows.h"
+
+namespace RE
+{
+	enum class ARCHIVE_TYPE : std::int32_t
+	{
+		kARCHIVE_TYPE_ALL = 0xFFFF,
+		kARCHIVE_TYPE_MESHES = 0x1,
+		kARCHIVE_TYPE_TEXTURES = 0x2,
+		kARCHIVE_TYPE_MENUS = 0x4,
+		kARCHIVE_TYPE_SOUNDS = 0x8,
+		kARCHIVE_TYPE_VOICES = 0x10,
+		kARCHIVE_TYPE_SHADERS = 0x20,
+		kARCHIVE_TYPE_TREES = 0x40,
+		kARCHIVE_TYPE_FONTS = 0x80,
+		kARCHIVE_TYPE_MISC = 0x100,
+		kARCHIVE_TYPE_COUNT = 0x9,
+	};
+}
