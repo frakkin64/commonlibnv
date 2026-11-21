@@ -425,4 +425,5 @@ namespace RE
 		bool                                bActiveEffectsUpdatedThisFrame;  // 2A1
 		std::uint16_t                       pad2A2;                          // 2A2
 	};
+	static_assert(sizeof(StatsMenu) == 0x2A4);
 }

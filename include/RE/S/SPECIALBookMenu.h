@@ -64,6 +64,7 @@ namespace RE
 			} ___u4;  // 10
 			std::uint16_t               pad12;          // 12
 		};
+		static_assert(sizeof(SpecialBookButton) == 0x14);
 
 		class SpecialBookPage
 		{
@@ -91,6 +92,7 @@ namespace RE
 			NiAVObject*                 pTextObj[2];     // 0C?
 			ActorValue_Index            eActorValue;     // 14?
 		};
+		static_assert(sizeof(SpecialBookTextItem) == 0x18);
 
 		class ActorValueButton :
 			public SPECIALBookMenu::SpecialBookButton  // 00
@@ -108,6 +110,7 @@ namespace RE
 			BSSimpleArray<SPECIALBookMenu::SpecialBookTextItem*, 1024> AffectedFields;  // 14?
 			ActorValue_Index                                           eActorValue;     // 24?
 		};
+		static_assert(sizeof(ActorValueButton) == 0x28);
 
 		// override (Menu)
 		virtual ~SPECIALBookMenu() = default;                                   // 00

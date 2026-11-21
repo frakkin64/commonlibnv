@@ -138,4 +138,5 @@ namespace RE
 			return func(apWord);
 		}
 	};
+	static_assert(sizeof(ScriptCompiler) == 0x1);
 }

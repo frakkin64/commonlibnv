@@ -55,4 +55,5 @@ namespace RE
 		// members
 		TESForm* pObjectArray[34];  // 18
 	};
+	static_assert(sizeof(BGSDefaultObjectManager) == 0xA0);
 }

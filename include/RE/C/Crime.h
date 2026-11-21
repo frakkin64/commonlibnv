@@ -94,4 +94,5 @@ namespace RE
 		CombatTimeStamp            fCrimeTimeStamp;       // 34
 		BSSimpleList<TESFaction*>* pListofEnemyFactions;  // 38
 	};
+	static_assert(sizeof(Crime) == 0x3C);
 }

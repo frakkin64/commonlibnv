@@ -63,6 +63,7 @@ namespace RE
 			NiAVObject*                         pClosestObject;  // 2C?
 			NiMatrix3                           Rotation;        // 30?
 		};
+		static_assert(sizeof(CollisionInfo) == 0x54);
 
 		// override (MobileObject)
 		virtual ~ArrowProjectile() = default;                                                       // 04

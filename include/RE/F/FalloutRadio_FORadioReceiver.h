@@ -58,4 +58,5 @@ namespace RE
 		bool           bInRange;          // 1E?
 		bool           bIsActor;          // 1F?
 	};
+	static_assert(sizeof(FalloutRadio_FORadioReceiver) == 0x20);
 }

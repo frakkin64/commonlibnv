@@ -42,4 +42,5 @@ namespace RE
 		volatile bool bExit;                 // 4A
 		std::uint8_t  pad4B;                 // 4B
 	};
+	static_assert(sizeof(LoadingMenuThread) == 0x4C);
 }

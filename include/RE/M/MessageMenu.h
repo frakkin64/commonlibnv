@@ -63,6 +63,7 @@ namespace RE
 			float           fBackgroundTextureOpacity;  // 48?
 			std::uint32_t   uiWidthOverride;            // 4C?
 		};
+		static_assert(sizeof(MessageMenuEntry) == 0x50);
 
 		class PerkActivation
 		{

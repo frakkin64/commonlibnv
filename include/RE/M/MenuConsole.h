@@ -139,4 +139,5 @@ namespace RE
 		char                     cRecording[20][100];   // 40
 		char                     pOutputFileName[260];  // 810
 	};
+	static_assert(sizeof(MenuConsole) == 0x914);
 }
