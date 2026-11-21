@@ -7,6 +7,9 @@ namespace RE
 	class __declspec(novtable) NiAdditionalGeometryData_NiAGDDataBlock
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::NiAdditionalGeometryData_NiAGDDataBlock };
+		static constexpr auto VTABLE{ VTABLE::NiAdditionalGeometryData_NiAGDDataBlock };
+
 		virtual ~NiAdditionalGeometryData_NiAGDDataBlock() = default;  // 00
 
 		// members

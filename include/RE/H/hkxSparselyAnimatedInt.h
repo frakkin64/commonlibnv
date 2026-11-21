@@ -12,6 +12,9 @@ namespace RE
 		public hkReferencedObject  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::hkxSparselyAnimatedInt };
+		static constexpr auto VTABLE{ VTABLE::hkxSparselyAnimatedInt };
+
 		// override (hkReferencedObject)
 		virtual ~hkxSparselyAnimatedInt() = default;  // 00
 

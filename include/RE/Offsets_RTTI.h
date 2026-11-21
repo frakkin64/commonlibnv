@@ -370,6 +370,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset ExtraCollisionData{ 0xD032FC };
 	inline constexpr REL::Offset ExtraCombatStyle{ 0xD03B98 };
 	inline constexpr REL::Offset ExtraContainerChanges{ 0xD04098 };
+	inline constexpr REL::Offset ExtraCount{ 0xD035A8 };
 	inline constexpr REL::Offset ExtraCreatureAwakeSound{ 0xD04E40 };
 	inline constexpr REL::Offset ExtraCreatureMovementSound{ 0xD04E8C };
 	inline constexpr REL::Offset ExtraDataList{ 0xD02DA4 };
@@ -386,9 +387,11 @@ namespace RE::RTTI
 	inline constexpr REL::Offset ExtraFollower{ 0xD03E84 };
 	inline constexpr REL::Offset ExtraFollowerSwimBreadcrumbs{ 0xD051D0 };
 	inline constexpr REL::Offset ExtraFriendHits{ 0xD04D10 };
+	inline constexpr REL::Offset ExtraGlobal{ 0xD03510 };
 	inline constexpr REL::Offset ExtraGuardedRefData{ 0xD03ED0 };
 	inline constexpr REL::Offset ExtraHavok{ 0xD02980 };
 	inline constexpr REL::Offset ExtraHeadingTarget{ 0xD03938 };
+	inline constexpr REL::Offset ExtraHealth{ 0xD035F4 };
 	inline constexpr REL::Offset ExtraHealthPerc{ 0xD03004 };
 	inline constexpr REL::Offset ExtraHotKey{ 0xD037BC };
 	inline constexpr REL::Offset ExtraIgnoredBySandbox{ 0xD05138 };
@@ -402,6 +405,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset ExtraLinkedRef{ 0xD04720 };
 	inline constexpr REL::Offset ExtraLinkedRefChildren{ 0xD046D4 };
 	inline constexpr REL::Offset ExtraLitWaterRefs{ 0xD02ED4 };
+	inline constexpr REL::Offset ExtraLock{ 0xD0342C };
 	inline constexpr REL::Offset ExtraMapMarker{ 0xD03F68 };
 	inline constexpr REL::Offset ExtraMerchantContainer{ 0xD0489C };
 	inline constexpr REL::Offset ExtraModdingItem{ 0xD03B4C };
@@ -413,6 +417,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset ExtraOcclusionPlaneRefData{ 0xD03218 };
 	inline constexpr REL::Offset ExtraOpenCloseActivateRef{ 0xD03134 };
 	inline constexpr REL::Offset ExtraOriginalReference{ 0xD040E4 };
+	inline constexpr REL::Offset ExtraOwnership{ 0xD034C4 };
 	inline constexpr REL::Offset ExtraPackageStartLocation{ 0xD042F8 };
 	inline constexpr REL::Offset ExtraPatrolRefData{ 0xD031CC };
 	inline constexpr REL::Offset ExtraPatrolRefInUseData{ 0xD05184 };
@@ -427,6 +432,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset ExtraRadius{ 0xD03394 };
 	inline constexpr REL::Offset ExtraRagDollData{ 0xD04428 };
 	inline constexpr REL::Offset ExtraRandomTeleportMarker{ 0xD04688 };
+	inline constexpr REL::Offset ExtraRank{ 0xD0355C };
 	inline constexpr REL::Offset ExtraReferencePointer{ 0xD03808 };
 	inline constexpr REL::Offset ExtraReflectedRefs{ 0xD02DF0 };
 	inline constexpr REL::Offset ExtraReflectorRefs{ 0xD02E3C };
@@ -449,8 +455,11 @@ namespace RE::RTTI
 	inline constexpr REL::Offset ExtraStartingPosition{ 0xD03DA0 };
 	inline constexpr REL::Offset ExtraStartingWorldOrCell{ 0xD03DEC };
 	inline constexpr REL::Offset ExtraTalkingActor{ 0xD04FBC };
+	inline constexpr REL::Offset ExtraTeleport{ 0xD03478 };
 	inline constexpr REL::Offset ExtraTerminalState{ 0xD0309C };
+	inline constexpr REL::Offset ExtraTimeLeft{ 0xD0368C };
 	inline constexpr REL::Offset ExtraTresPassPackage{ 0xD03854 };
+	inline constexpr REL::Offset ExtraUses{ 0xD03640 };
 	inline constexpr REL::Offset ExtraWaterLightRefs{ 0xD02E88 };
 	inline constexpr REL::Offset ExtraWaterZoneMap{ 0xD050EC };
 	inline constexpr REL::Offset ExtraWeaponAttackSound{ 0xD04F24 };
@@ -564,6 +573,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset NiAVObjectPalette{ 0xD229D8 };
 	inline constexpr REL::Offset NiAccumulator{ 0xD27C58 };
 	inline constexpr REL::Offset NiAdditionalGeometryData{ 0xD0D2BC };
+	inline constexpr REL::Offset NiAdditionalGeometryData_NiAGDDataBlock{ 0xD25BCC };
 	inline constexpr REL::Offset NiAlphaAccumulator{ 0xD278A0 };
 	inline constexpr REL::Offset NiAlphaProperty{ 0xD0541C };
 	inline constexpr REL::Offset NiBSBoneLODController{ 0xD2BBD0 };
@@ -649,6 +659,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset NiGeometry{ 0xD26150 };
 	inline constexpr REL::Offset NiGeometryBufferData{ 0xD3CE30 };
 	inline constexpr REL::Offset NiGeometryData{ 0xD255FC };
+	inline constexpr REL::Offset NiGeometryData_RendererData{ 0xD3CDE8 };
 	inline constexpr REL::Offset NiGeometryGroup{ 0xD3DFB8 };
 	inline constexpr REL::Offset NiGeometryGroupManager{ 0xD260A8 };
 	inline constexpr REL::Offset NiGlobalConstantEntry{ 0xD27B04 };
@@ -723,6 +734,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset NiScreenElements{ 0xD26488 };
 	inline constexpr REL::Offset NiScreenElementsData{ 0xD264F0 };
 	inline constexpr REL::Offset NiScreenGeometryData{ 0xD26D54 };
+	inline constexpr REL::Offset NiScreenGeometryData_ScreenElement{ 0xD26B2C };
 	inline constexpr REL::Offset NiScreenLODData{ 0xD2724C };
 	inline constexpr REL::Offset NiScreenTexture{ 0xD271F8 };
 	inline constexpr REL::Offset NiSearchPath{ 0xD27D88 };
@@ -737,6 +749,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset NiSkinData{ 0xD26364 };
 	inline constexpr REL::Offset NiSkinInstance{ 0xD1437C };
 	inline constexpr REL::Offset NiSkinPartition{ 0xD2627C };
+	inline constexpr REL::Offset NiSkinPartition_Partition{ 0xD26234 };
 	inline constexpr REL::Offset NiSourceCubeMap{ 0xD24FE0 };
 	inline constexpr REL::Offset NiSourceTexture{ 0xD24F84 };
 	inline constexpr REL::Offset NiSpecularProperty{ 0xD2713C };
@@ -750,9 +763,11 @@ namespace RE::RTTI
 	inline constexpr REL::Offset NiTask{ 0xD140E8 };
 	inline constexpr REL::Offset NiTextKeyExtraData{ 0xD23A4C };
 	inline constexpr REL::Offset NiTexture{ 0xD24F2C };
+	inline constexpr REL::Offset NiTexture_RendererData{ 0xD27394 };
 	inline constexpr REL::Offset NiTextureEffect{ 0xD26F64 };
 	inline constexpr REL::Offset NiTextureTransformController{ 0xD239E8 };
 	inline constexpr REL::Offset NiTexturingProperty{ 0xD2587C };
+	inline constexpr REL::Offset NiTexturingProperty_Map{ 0xD25750 };
 	inline constexpr REL::Offset NiTimeController{ 0xD25970 };
 	inline constexpr REL::Offset NiTransformData{ 0xD24208 };
 	inline constexpr REL::Offset NiTriBasedGeom{ 0xD26600 };
@@ -1529,6 +1544,7 @@ namespace RE::RTTI
 	inline constexpr REL::Offset hkpVehicleDefaultAnalogDriverInput{ 0xD39090 };
 	inline constexpr REL::Offset hkpVehicleDefaultBrake{ 0xD38684 };
 	inline constexpr REL::Offset hkpVehicleDefaultSteering{ 0xD39240 };
+	inline constexpr REL::Offset hkpVehicleDefaultSuspension{ 0xD385F4 };
 	inline constexpr REL::Offset hkpVehicleDefaultTransmission{ 0xD391B0 };
 	inline constexpr REL::Offset hkpVehicleDefaultVelocityDamper{ 0xD39120 };
 	inline constexpr REL::Offset hkpVehicleDriverInputAnalogStatus{ 0xD3903C };
@@ -1573,6 +1589,8 @@ namespace RE::RTTI
 	inline constexpr REL::Offset hkxScene{ 0xD3A190 };
 	inline constexpr REL::Offset hkxSkinBinding{ 0xD3A140 };
 	inline constexpr REL::Offset hkxSparselyAnimatedBool{ 0xD3A0F0 };
+	inline constexpr REL::Offset hkxSparselyAnimatedEnum{ 0xD38AC8 };
+	inline constexpr REL::Offset hkxSparselyAnimatedInt{ 0xD38A78 };
 	inline constexpr REL::Offset hkxSparselyAnimatedString{ 0xD3A0A0 };
 	inline constexpr REL::Offset hkxTextureFile{ 0xD3A050 };
 	inline constexpr REL::Offset hkxTextureInplace{ 0xD3A000 };

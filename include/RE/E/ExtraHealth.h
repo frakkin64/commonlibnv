@@ -10,6 +10,9 @@ namespace RE
 		public BSExtraData  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::ExtraHealth };
+		static constexpr auto VTABLE{ VTABLE::ExtraHealth };
+
 		// override (BSExtraData)
 		virtual ~ExtraHealth() = default;                       // 00
 		virtual bool Compare(BSExtraData* apCompare) override;  // 01

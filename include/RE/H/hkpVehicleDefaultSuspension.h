@@ -15,6 +15,9 @@ namespace RE
 		public hkpVehicleSuspension  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::hkpVehicleDefaultSuspension };
+		static constexpr auto VTABLE{ VTABLE::hkpVehicleDefaultSuspension };
+
 		class WheelSpringSuspensionParameters;
 
 		class WheelSpringSuspensionParameters

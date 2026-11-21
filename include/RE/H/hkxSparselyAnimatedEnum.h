@@ -13,6 +13,9 @@ namespace RE
 		public hkxSparselyAnimatedInt  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::hkxSparselyAnimatedEnum };
+		static constexpr auto VTABLE{ VTABLE::hkxSparselyAnimatedEnum };
+
 		// override (hkxSparselyAnimatedInt)
 		virtual ~hkxSparselyAnimatedEnum() = default;  // 00
 

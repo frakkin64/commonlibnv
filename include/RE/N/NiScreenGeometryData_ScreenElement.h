@@ -10,6 +10,9 @@ namespace RE
 	class __declspec(novtable) NiScreenGeometryData_ScreenElement
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::NiScreenGeometryData_ScreenElement };
+		static constexpr auto VTABLE{ VTABLE::NiScreenGeometryData_ScreenElement };
+
 		virtual ~NiScreenGeometryData_ScreenElement() = default;  // 00
 
 		// members
