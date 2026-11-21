@@ -3,6 +3,7 @@
 #include "NVSE/Impl/Windows.h"
 
 #include "RE/B/BSSimpleList.h"
+#include "RE/B/BSSoundHandle.h"
 #include "RE/B/BSStringT.h"
 #include "RE/L/ListBox.h"
 #include "RE/M/Menu.h"
@@ -167,7 +168,6 @@ namespace RE
 
 	public:
 		// members
-		// not placed: Sounds
 		Tile*                                pTiles[16];              // 28
 		ListBox<TERMINAL_MENU_ITEM*>         lbMenuItems;             // 68
 		BSSimpleList<BGSTerminal*>           TerminalStack;           // 98
@@ -180,8 +180,10 @@ namespace RE
 		const char*                          pNoteText;               // BC
 		bool                                 bTutorial;               // C0
 		bool                                 bDisplayFlag;            // C1
-		std::uint8_t                         padC2[0xA];              // C2
-		ComputersMenu::AnimatingTextManager* pATManager;              // CC
-		void*                                NoteActivationFn[4];     // D0
+		std::uint8_t                         padC2[0x2];              // C2
+		BSSoundHandle                        Sounds[3];               // C4
+		ComputersMenu::AnimatingTextManager* pATManager;              // E8
+		void*                                NoteActivationFn[4];     // EC
 	};
+	static_assert(sizeof(ComputersMenu) == 0xFC);
 }
