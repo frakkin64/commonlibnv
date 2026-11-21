@@ -169,6 +169,20 @@ namespace RE
 			return func(apString, aiIndex);
 		}
 
+		Tile_Value* GetValue(std::int32_t aiTrait)
+		{
+			using func_t = decltype(&Tile::GetValue);
+			static REL::Relocation<func_t> func{ Offsets::Tile::GetValue };
+			return func(this, aiTrait);
+		}
+
+		Tile_Value* AddValue(std::int32_t aiTrait)
+		{
+			using func_t = decltype(&Tile::AddValue);
+			static REL::Relocation<func_t> func{ Offsets::Tile::AddValue };
+			return func(this, aiTrait);
+		}
+
 		float GetFloat(std::int32_t aiTrait)
 		{
 			using func_t = decltype(&Tile::GetFloat);
