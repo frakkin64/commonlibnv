@@ -333,6 +333,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset GetIronSightsAttack{ 0x4B2B60 };
 		inline constexpr REL::Offset UpdateActorMover{ 0x4B3230 };
 		inline constexpr REL::Offset SetPathfindingGoal{ 0x4B3690 };
+		inline constexpr REL::Offset SetPathfindingGoal_1{ 0x4B36F0 };
 		inline constexpr REL::Offset GetCurrentPathfindingGoal{ 0x4B3860 };
 		inline constexpr REL::Offset BuildRequest{ 0x4B3880 };
 		inline constexpr REL::Offset IsPathValid{ 0x4B3960 };
@@ -484,7 +485,9 @@ namespace RE::Offsets
 		inline constexpr REL::Offset ClearCurrentData{ 0x5DAF80 };
 		inline constexpr REL::Offset BackGroundBuildPath{ 0x5DB090 };
 		inline constexpr REL::Offset SetGoal{ 0x5DBA50 };
+		inline constexpr REL::Offset SetGoal_1{ 0x5DBB10 };
 		inline constexpr REL::Offset SetGoalAndAngle{ 0x5DBB60 };
+		inline constexpr REL::Offset SetGoalAndAngle_1{ 0x5DBC30 };
 		inline constexpr REL::Offset BuildRequest{ 0x5DBC90 };
 		inline constexpr REL::Offset DoStartMoving{ 0x5DBDC0 };
 		inline constexpr REL::Offset HandleMovementResult{ 0x5DC5E0 };

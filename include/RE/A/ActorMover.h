@@ -18,6 +18,7 @@ namespace RE
 	class PathingRequest;
 	class PathingSolution;
 	class TESObjectCELL;
+	class TESObjectREFR;
 	class TESWorldSpace;
 
 	class __declspec(novtable) ActorMover
@@ -86,16 +87,30 @@ namespace RE
 
 		bool SetGoal(NiPoint3 const& aGoalLocation, TESObjectCELL* apCell, TESWorldSpace* apWorldSpace, float a_arg4, PathingAvoidNodeArray* a_arg5)
 		{
-			using func_t = decltype(&ActorMover::SetGoal);
+			using func_t = bool (ActorMover::*)(NiPoint3 const&, TESObjectCELL*, TESWorldSpace*, float, PathingAvoidNodeArray*);
 			static REL::Relocation<func_t> func{ Offsets::ActorMover::SetGoal };
 			return func(this, aGoalLocation, apCell, apWorldSpace, a_arg4, a_arg5);
 		}
 
+		bool SetGoal(TESObjectREFR* a_arg1, float a_arg2, PathingAvoidNodeArray* a_arg3)
+		{
+			using func_t = bool (ActorMover::*)(TESObjectREFR*, float, PathingAvoidNodeArray*);
+			static REL::Relocation<func_t> func{ Offsets::ActorMover::SetGoal_1 };
+			return func(this, a_arg1, a_arg2, a_arg3);
+		}
+
 		bool SetGoalAndAngle(NiPoint3 const& aGoalLocation, TESObjectCELL* apCell, TESWorldSpace* apWorldSpace, float afAngleToFace, float a_arg5, PathingAvoidNodeArray* a_arg6)
 		{
-			using func_t = decltype(&ActorMover::SetGoalAndAngle);
+			using func_t = bool (ActorMover::*)(NiPoint3 const&, TESObjectCELL*, TESWorldSpace*, float, float, PathingAvoidNodeArray*);
 			static REL::Relocation<func_t> func{ Offsets::ActorMover::SetGoalAndAngle };
 			return func(this, aGoalLocation, apCell, apWorldSpace, afAngleToFace, a_arg5, a_arg6);
+		}
+
+		bool SetGoalAndAngle(TESObjectREFR* a_arg1, float a_arg2, PathingAvoidNodeArray* a_arg3)
+		{
+			using func_t = bool (ActorMover::*)(TESObjectREFR*, float, PathingAvoidNodeArray*);
+			static REL::Relocation<func_t> func{ Offsets::ActorMover::SetGoalAndAngle_1 };
+			return func(this, a_arg1, a_arg2, a_arg3);
 		}
 
 		static void BuildRequest(Actor* apActor, PathingRequest* apRequest, NiPoint3 const& aGoalLocation, TESObjectCELL* apCell, TESWorldSpace* apWorldSpace, float a_arg6, PathingAvoidNodeArray* a_arg7)
