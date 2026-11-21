@@ -3012,6 +3012,7 @@
 #include "RE/Q/QUEUED_SUB_BUFFER_TYPE.h"
 #include "RE/Q/QuantityMenu.h"
 #include "RE/Q/QuestPerkEntryData.h"
+#include "RE/Q/QuestUpdateManager.h"
 #include "RE/Q/QuestUpdateManager_HUD_CUSTOM_QUEST_QUEUE_PRIORITY.h"
 #include "RE/Q/QuestUpdateManager_HUD_CUSTOM_QUEST_TEXT_JUSTIFICATION.h"
 #include "RE/Q/QueuedActor.h"

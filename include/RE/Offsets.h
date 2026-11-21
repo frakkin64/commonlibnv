@@ -9067,6 +9067,11 @@ namespace RE::Offsets
 		inline constexpr REL::Offset Close{ 0x3ABDF0 };
 	}
 
+	namespace QuestUpdateManager
+	{
+		inline constexpr REL::Offset SetCustomQuestText{ 0x36B960 };
+	}
+
 	namespace QueuedActor
 	{
 		inline constexpr REL::Offset ctor{ 0x411D0 };
