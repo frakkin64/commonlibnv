@@ -118,6 +118,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                               // 0D
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 
+		[[nodiscard]] static SPECIALBookMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<SPECIALBookMenu**> singleton{ Offsets::SPECIALBookMenu::pInstance };
+			return *singleton;
+		}
+
 		SPECIALBookMenu* ctor()
 		{
 			using func_t = SPECIALBookMenu*(__thiscall*)(SPECIALBookMenu*);
