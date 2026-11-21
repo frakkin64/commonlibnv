@@ -9500,6 +9500,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset IncreaseActorValue{ 0x3CAA80 };
 		inline constexpr REL::Offset CloseCallback{ 0x3CAC30 };
 		inline constexpr REL::Offset LoadButtonAndTextImages{ 0x3CADD0 };
+		inline constexpr REL::Offset pInstance{ 0xDDAA38 };
 	}
 
 	namespace SPECIALBookMenu_ActorValueButton
