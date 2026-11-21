@@ -50,6 +50,12 @@ namespace RE
 		virtual void DoIdle() override;                                         // 0B
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static LockPickMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<LockPickMenu**> singleton{ Offsets::LockPickMenu::pInstance };
+			return *singleton;
+		}
+
 		LockPickMenu* ctor()
 		{
 			using func_t = LockPickMenu*(__thiscall*)(LockPickMenu*);

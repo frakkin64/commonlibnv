@@ -36,6 +36,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                               // 0D
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 
+		[[nodiscard]] static RecipeMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<RecipeMenu**> singleton{ Offsets::RecipeMenu::pInstance };
+			return *singleton;
+		}
+
 		RecipeMenu* ctor()
 		{
 			using func_t = RecipeMenu*(__thiscall*)(RecipeMenu*);

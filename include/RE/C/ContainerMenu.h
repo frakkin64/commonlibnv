@@ -51,6 +51,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static ContainerMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<ContainerMenu**> singleton{ Offsets::ContainerMenu::pInstance };
+			return *singleton;
+		}
+
 		ContainerMenu* ctor()
 		{
 			using func_t = ContainerMenu*(__thiscall*)(ContainerMenu*);

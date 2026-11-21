@@ -46,6 +46,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 		virtual void DoControllerSwitch(bool abHas360Controller) override;      // 11
 
+		[[nodiscard]] static MapMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<MapMenu**> singleton{ Offsets::MapMenu::pInstance };
+			return *singleton;
+		}
+
 		MapMenu* ctor()
 		{
 			using func_t = MapMenu*(__thiscall*)(MapMenu*);

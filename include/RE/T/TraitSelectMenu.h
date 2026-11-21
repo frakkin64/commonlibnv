@@ -90,6 +90,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                               // 0D
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 
+		[[nodiscard]] static TraitSelectMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<TraitSelectMenu**> singleton{ Offsets::TraitSelectMenu::pInstance };
+			return *singleton;
+		}
+
 		static Tile* Create()
 		{
 			using func_t = decltype(&TraitSelectMenu::Create);

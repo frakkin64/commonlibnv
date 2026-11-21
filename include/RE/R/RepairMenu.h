@@ -27,6 +27,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                                      // 0D
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static RepairMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<RepairMenu**> singleton{ Offsets::RepairMenu::pInstance };
+			return *singleton;
+		}
+
 		RepairMenu* ctor()
 		{
 			using func_t = RepairMenu*(__thiscall*)(RepairMenu*);

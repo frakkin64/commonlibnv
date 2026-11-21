@@ -93,6 +93,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                               // 0D
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 
+		[[nodiscard]] static CompanionWheelMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<CompanionWheelMenu**> singleton{ Offsets::CompanionWheelMenu::pInstance };
+			return *singleton;
+		}
+
 		CompanionWheelMenu* ctor()
 		{
 			using func_t = CompanionWheelMenu*(__thiscall*)(CompanionWheelMenu*);

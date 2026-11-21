@@ -188,6 +188,12 @@ namespace RE
 		virtual void DoIdle() override;                                         // 0B
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static BlackJackMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<BlackJackMenu**> singleton{ Offsets::BlackJackMenu::pInstance };
+			return *singleton;
+		}
+
 		BlackJackMenu* ctor()
 		{
 			using func_t = BlackJackMenu*(__thiscall*)(BlackJackMenu*);

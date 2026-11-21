@@ -33,6 +33,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static CharGenMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<CharGenMenu**> singleton{ Offsets::CharGenMenu::pInstance };
+			return *singleton;
+		}
+
 		CharGenMenu* ctor()
 		{
 			using func_t = CharGenMenu*(__thiscall*)(CharGenMenu*);

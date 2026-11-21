@@ -25,6 +25,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static TutorialMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<TutorialMenu**> singleton{ Offsets::TutorialMenu::pInstance };
+			return *singleton;
+		}
+
 		static bool IsHelpEnabled()
 		{
 			using func_t = decltype(&TutorialMenu::IsHelpEnabled);

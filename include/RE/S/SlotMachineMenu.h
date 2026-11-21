@@ -80,6 +80,12 @@ namespace RE
 		virtual void DoIdle() override;                                         // 0B
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static SlotMachineMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<SlotMachineMenu**> singleton{ Offsets::SlotMachineMenu::pInstance };
+			return *singleton;
+		}
+
 		SlotMachineMenu* ctor()
 		{
 			using func_t = SlotMachineMenu*(__thiscall*)(SlotMachineMenu*);

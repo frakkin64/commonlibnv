@@ -159,6 +159,12 @@ namespace RE
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 		virtual void DoControllerSwitch(bool abHas360Controller) override;             // 11
 
+		[[nodiscard]] static StatsMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<StatsMenu**> singleton{ Offsets::StatsMenu::pInstance };
+			return *singleton;
+		}
+
 		static void ResetHealingMode()
 		{
 			using func_t = decltype(&StatsMenu::ResetHealingMode);

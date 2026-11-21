@@ -72,6 +72,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static ComputersMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<ComputersMenu**> singleton{ Offsets::ComputersMenu::pInstance };
+			return *singleton;
+		}
+
 		static Tile* Create(TESObjectREFR* apTerminalRef)
 		{
 			using func_t = decltype(&ComputersMenu::Create);

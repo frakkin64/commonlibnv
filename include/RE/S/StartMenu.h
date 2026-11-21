@@ -157,6 +157,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static StartMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<StartMenu**> singleton{ Offsets::StartMenu::pInstance };
+			return *singleton;
+		}
+
 		static bool PauseMenuIsActive()
 		{
 			using func_t = decltype(&StartMenu::PauseMenuIsActive);

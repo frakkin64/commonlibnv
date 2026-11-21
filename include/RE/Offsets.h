@@ -2757,6 +2757,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SetFilterModeTitle{ 0x3301F0 };
 		inline constexpr REL::Offset FilterModeFunc{ 0x3304B0 };
 		inline constexpr REL::Offset ForceBarterUpdate{ 0x330690 };
+		inline constexpr REL::Offset pInstance{ 0xDD8FA4 };
 	}
 
 	namespace BaseExtraList
@@ -2861,6 +2862,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset ClearDeckHighlight{ 0x339AD0 };
 		inline constexpr REL::Offset SetBetChips{ 0x339B30 };
 		inline constexpr REL::Offset UpdateEarningsString{ 0x33AB40 };
+		inline constexpr REL::Offset pInstance{ 0xDD9050 };
 	}
 
 	namespace BlendSettingCollection
@@ -3087,6 +3089,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset LoadNewBill{ 0x34F9B0 };
 		inline constexpr REL::Offset LoadNewCoin{ 0x34FC00 };
 		inline constexpr REL::Offset IsGameOver{ 0x352E20 };
+		inline constexpr REL::Offset pInstance{ 0xDD917C };
 	}
 
 	namespace CellMopp
@@ -3119,6 +3122,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SetAttributesFunc{ 0x354460 };
 		inline constexpr REL::Offset TagSkillsFunc{ 0x354530 };
 		inline constexpr REL::Offset SetDisplayString{ 0x3545A0 };
+		inline constexpr REL::Offset pInstance{ 0xDD920C };
 	}
 
 	namespace Character
@@ -4132,6 +4136,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset PlayReactivityBark{ 0x3573D0 };
 		inline constexpr REL::Offset RunFollowerCommandScript{ 0x3575B0 };
 		inline constexpr REL::Offset DisplayCompanionWheelSubtitle{ 0x357690 };
+		inline constexpr REL::Offset pInstance{ 0xDD92B8 };
 	}
 
 	namespace ComputersMenu
@@ -4149,6 +4154,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset DisplayNoteImage{ 0x359470 };
 		inline constexpr REL::Offset Redisplay{ 0x359560 };
 		inline constexpr REL::Offset PostDisplay{ 0x3596A0 };
+		inline constexpr REL::Offset pInstance{ 0xDD9334 };
 	}
 
 	namespace ComputersMenu_AnimatingTextManager
@@ -4198,6 +4204,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SetContainerTitle{ 0x35E8C0 };
 		inline constexpr REL::Offset PlayReactivityBark{ 0x35EC60 };
 		inline constexpr REL::Offset DisplayContainerMenuSubtitle{ 0x35EEA0 };
+		inline constexpr REL::Offset pInstance{ 0xDD93F8 };
 	}
 
 	namespace ContainerObject
@@ -4397,6 +4404,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset ServiceEnd{ 0x3640A0 };
 		inline constexpr REL::Offset SetPause{ 0x364200 };
 		inline constexpr REL::Offset DebugResetSaidOnceFlags{ 0x364290 };
+		inline constexpr REL::Offset pInstance{ 0xDD9510 };
 	}
 
 	namespace DialogueItem
@@ -5658,6 +5666,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset KillQuestObjectives{ 0x37F5E0 };
 		inline constexpr REL::Offset UpdateShake{ 0x37F700 };
 		inline constexpr REL::Offset ShiftConditionTileOver{ 0x37F890 };
+		inline constexpr REL::Offset pInstance{ 0xDD96C0 };
 	}
 
 	namespace HackingMenu
@@ -5685,6 +5694,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset UpdateCursorPos{ 0x36AB40 };
 		inline constexpr REL::Offset UpdateScrollingCursor{ 0x36AC10 };
 		inline constexpr REL::Offset MakeGuessBlock{ 0x36AD50 };
+		inline constexpr REL::Offset pInstance{ 0xDD95B8 };
 	}
 
 	namespace HackingMenu_Grid
@@ -6279,6 +6289,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset FilterFunc{ 0x382620 };
 		inline constexpr REL::Offset InitFunc{ 0x382850 };
 		inline constexpr REL::Offset UpdateInventoryMenu{ 0x382A90 };
+		inline constexpr REL::Offset pInstance{ 0xDD9EA4 };
 	}
 
 	namespace ItemChange
@@ -6327,6 +6338,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset Update{ 0x3840F0 };
 		inline constexpr REL::Offset ResetMenu{ 0x3846A0 };
 		inline constexpr REL::Offset InitItemModMenu{ 0x384710 };
+		inline constexpr REL::Offset pInstance{ 0xDD9F54 };
 	}
 
 	namespace KFModel
@@ -6370,6 +6382,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SortPerksFunc{ 0x3865D0 };
 		inline constexpr REL::Offset SetDisplayString{ 0x3866E0 };
 		inline constexpr REL::Offset ApplyPerkEffects{ 0x3867A0 };
+		inline constexpr REL::Offset pInstance{ 0xDD9FDC };
 	}
 
 	namespace LightEffect
@@ -6505,6 +6518,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset RotateLock{ 0x390F40 };
 		inline constexpr REL::Offset CreateSweetSpot{ 0x391000 };
 		inline constexpr REL::Offset IsTurningLock{ 0x391540 };
+		inline constexpr REL::Offset pInstance{ 0xDDA204 };
 	}
 
 	namespace LookIK_DATA
@@ -6843,6 +6857,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset ClearMapMemory{ 0x3A1490 };
 		inline constexpr REL::Offset ClearWorldMapTexture{ 0x3A1670 };
 		inline constexpr REL::Offset ShouldRenderLocalMap{ 0x3A1750 };
+		inline constexpr REL::Offset pInstance{ 0xDDA368 };
 	}
 
 	namespace MediaLocationController
@@ -6993,6 +7008,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset DisableMessageMenu{ 0x3AA6B0 };
 		inline constexpr REL::Offset AddMessageToQueue_1{ 0x3AA720 };
 		inline constexpr REL::Offset SetPauseMenuMode{ 0x3AAF20 };
+		inline constexpr REL::Offset pInstance{ 0xDDA4F0 };
 	}
 
 	namespace MessageMenu_MessageMenuEntry
@@ -9065,6 +9081,7 @@ namespace RE::Offsets
 	{
 		inline constexpr REL::Offset Create{ 0x3ABA00 };
 		inline constexpr REL::Offset Close{ 0x3ABDF0 };
+		inline constexpr REL::Offset pInstance{ 0xDDA618 };
 	}
 
 	namespace QueuedActor
@@ -9337,6 +9354,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset ItemSelectCallback{ 0x3284F0 };
 		inline constexpr REL::Offset ForceRecipeUpdate{ 0x328A30 };
 		inline constexpr REL::Offset PopulateItemStatsDisplay{ 0x328DA0 };
+		inline constexpr REL::Offset pInstance{ 0xDD8E90 };
 	}
 
 	namespace ReferenceInitialData
@@ -9374,6 +9392,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset Update{ 0x3B6AA0 };
 		inline constexpr REL::Offset ResetMenu{ 0x3B6FB0 };
 		inline constexpr REL::Offset InitRepairMenu{ 0x3B7020 };
+		inline constexpr REL::Offset pInstance{ 0xDDA75C };
 	}
 
 	namespace RepairServicesMenu
@@ -9386,6 +9405,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SortFunc{ 0x3B7C40 };
 		inline constexpr REL::Offset RepairItem{ 0x3B7F70 };
 		inline constexpr REL::Offset Update{ 0x3B8B30 };
+		inline constexpr REL::Offset pInstance{ 0xDDA7F0 };
 	}
 
 	namespace ReservedCoverLocation
@@ -9429,6 +9449,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset ResetBetChips{ 0x3BF7A0 };
 		inline constexpr REL::Offset SetBetChip{ 0x3BF840 };
 		inline constexpr REL::Offset UpdateEarningsString{ 0x3BF9E0 };
+		inline constexpr REL::Offset pInstance{ 0xDDA878 };
 	}
 
 	namespace SAVE_DESTRUCTIBLE_OBJECT_STAGE
@@ -10390,6 +10411,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SetTimeText{ 0x3C0000 };
 		inline constexpr REL::Offset Close{ 0x3C01B0 };
 		inline constexpr REL::Offset UpdateSleeping{ 0x3C0580 };
+		inline constexpr REL::Offset pInstance{ 0xDDA920 };
 	}
 
 	namespace SlotMachineMenu
@@ -10408,6 +10430,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset InterpretSpin{ 0x3C5760 };
 		inline constexpr REL::Offset ApplyLuck{ 0x3C58F0 };
 		inline constexpr REL::Offset UpdateEarningsString{ 0x3C5E60 };
+		inline constexpr REL::Offset pInstance{ 0xDDA9A4 };
 	}
 
 	namespace SpecificItemCollector
@@ -10532,6 +10555,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset LoadDownloadedContent{ 0x3D69F0 };
 		inline constexpr REL::Offset _EndCredits{ 0x3D6C90 };
 		inline constexpr REL::Offset SaveSettings{ 0x3D6D70 };
+		inline constexpr REL::Offset pInstance{ 0xDDAAC0 };
 	}
 
 	namespace StartMenu_IdleTimer
@@ -10586,6 +10610,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset NamedEffectSortFn{ 0x3E0540 };
 		inline constexpr REL::Offset StimpakTargetConditionCallback{ 0x3E05F0 };
 		inline constexpr REL::Offset DrBagTargetConditionCallback{ 0x3E06F0 };
+		inline constexpr REL::Offset pInstance{ 0xDDACE0 };
 	}
 
 	namespace StatsMenu_BodyPartController
@@ -13182,6 +13207,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset UpdatePerksFunc{ 0x3E7670 };
 		inline constexpr REL::Offset SortPerksFunc{ 0x3E7740 };
 		inline constexpr REL::Offset ApplyPerkEffects{ 0x3E7850 };
+		inline constexpr REL::Offset pInstance{ 0xDDAF74 };
 	}
 
 	namespace TraitSelectMenu
@@ -13193,6 +13219,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset Navigate{ 0x3E85C0 };
 		inline constexpr REL::Offset SetBoxAsChecked{ 0x3E86C0 };
 		inline constexpr REL::Offset ToggleCheckBox{ 0x3E8860 };
+		inline constexpr REL::Offset pInstance{ 0xDDB00C };
 	}
 
 	namespace TrespassPackage
@@ -13222,6 +13249,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SetPage{ 0x3E8ED0 };
 		inline constexpr REL::Offset UpdatePrevNext{ 0x3E9010 };
 		inline constexpr REL::Offset SetTitleAndText{ 0x3E9060 };
+		inline constexpr REL::Offset pInstance{ 0xDDB088 };
 	}
 
 	namespace UnreachableLocation
@@ -13291,6 +13319,7 @@ namespace RE::Offsets
 		inline constexpr REL::Offset BuildTargetList{ 0x3F52C0 };
 		inline constexpr REL::Offset PickNewTarget{ 0x3F6AF0 };
 		inline constexpr REL::Offset BuildMetersForTarget{ 0x3F6E50 };
+		inline constexpr REL::Offset pInstance{ 0xDDB0D4 };
 	}
 
 	namespace VATS_COMMAND

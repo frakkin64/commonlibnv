@@ -23,6 +23,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                               // 0D
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 
+		[[nodiscard]] static SleepWaitMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<SleepWaitMenu**> singleton{ Offsets::SleepWaitMenu::pInstance };
+			return *singleton;
+		}
+
 		SleepWaitMenu* ctor()
 		{
 			using func_t = SleepWaitMenu*(__thiscall*)(SleepWaitMenu*);

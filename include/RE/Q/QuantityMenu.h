@@ -24,6 +24,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static QuantityMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<QuantityMenu**> singleton{ Offsets::QuantityMenu::pInstance };
+			return *singleton;
+		}
+
 		static Tile* Create(std::int32_t aiMaxAmount, void* afpCallback, std::int32_t aiStartAmount)
 		{
 			using func_t = decltype(&QuantityMenu::Create);
