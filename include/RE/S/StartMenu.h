@@ -680,6 +680,8 @@ namespace RE
 		Tile*                          pDownloadsOption;    // 1BC
 		Tile*                          pLoadOption;         // 1C0
 		Tile*                          pContinueOption;     // 1C4
-		const std::uint32_t            ENABLED_TRAIT;       // 1C8
+		std::uint8_t                   pad1C8[0x8];         // 1C8
+		const std::uint32_t            ENABLED_TRAIT;       // 1D0
 	};
+	static_assert(sizeof(StartMenu) == 0x1D4);
 }
