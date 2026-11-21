@@ -1716,9 +1716,16 @@ namespace RE
 
 		bool SetPathfindingGoal(NiPoint3 const& aGoalLocation, TESObjectCELL* apCell, TESWorldSpace* apWorldSpace, float a_arg4, PathingAvoidNodeArray* a_arg5)
 		{
-			using func_t = decltype(&Actor::SetPathfindingGoal);
+			using func_t = bool (Actor::*)(NiPoint3 const&, TESObjectCELL*, TESWorldSpace*, float, PathingAvoidNodeArray*);
 			static REL::Relocation<func_t> func{ Offsets::Actor::SetPathfindingGoal };
 			return func(this, aGoalLocation, apCell, apWorldSpace, a_arg4, a_arg5);
+		}
+
+		bool SetPathfindingGoal(TESObjectREFR* a_arg1, float a_arg2, PathingAvoidNodeArray* a_arg3)
+		{
+			using func_t = bool (Actor::*)(TESObjectREFR*, float, PathingAvoidNodeArray*);
+			static REL::Relocation<func_t> func{ Offsets::Actor::SetPathfindingGoal_1 };
+			return func(this, a_arg1, a_arg2, a_arg3);
 		}
 
 		bool GetCurrentPathfindingGoal(PathingLocation* apRetLocation)
