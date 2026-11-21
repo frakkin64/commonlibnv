@@ -6880,6 +6880,8 @@ namespace RE::Offsets
 		inline constexpr REL::Offset SpecifyPools{ 0x466770 };
 		inline constexpr REL::Offset ProcessMemoryProblem{ 0x466A90 };
 		inline constexpr REL::Offset SpecifyMemoryLayout{ 0x466E00 };
+		inline constexpr REL::Offset Allocate{ 0x6A3E40 };
+		inline constexpr REL::Offset Free{ 0x6A4060 };
 		inline constexpr REL::Offset GetThreadScrapHeap{ 0x6A42E0 };
 	}
 

@@ -19,6 +19,20 @@ namespace RE
 			return func();
 		}
 
+		void* Allocate(std::uint32_t a_arg1)
+		{
+			using func_t = decltype(&MemoryManager::Allocate);
+			static REL::Relocation<func_t> func{ Offsets::MemoryManager::Allocate };
+			return func(this, a_arg1);
+		}
+
+		void Free(void* a_arg1)
+		{
+			using func_t = decltype(&MemoryManager::Free);
+			static REL::Relocation<func_t> func{ Offsets::MemoryManager::Free };
+			func(this, a_arg1);
+		}
+
 		ScrapHeap* GetThreadScrapHeap()
 		{
 			using func_t = decltype(&MemoryManager::GetThreadScrapHeap);
