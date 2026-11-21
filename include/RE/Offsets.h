@@ -13068,6 +13068,8 @@ namespace RE::Offsets
 		inline constexpr REL::Offset AddToTable{ 0x5FF8A0 };
 		inline constexpr REL::Offset LoadTextTable{ 0x5FF970 };
 		inline constexpr REL::Offset AddUserTrait{ 0x600940 };
+		inline constexpr REL::Offset GetValue{ 0x600F30 };
+		inline constexpr REL::Offset AddValue{ 0x601000 };
 		inline constexpr REL::Offset GetFloat{ 0x6011B0 };
 		inline constexpr REL::Offset GetString{ 0x6011F0 };
 		inline constexpr REL::Offset IsTrue{ 0x601230 };
