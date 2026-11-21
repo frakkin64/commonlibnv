@@ -468,14 +468,14 @@ namespace RE
 		TileShaderProperty*           pSlide2TSP;                      // 1F0
 		BSSoundHandle                 InitialSlideSound;               // 1F4
 		BSSoundHandle                 SlideSound;                      // 200
-		NiPointer<NiTexture>          spHoldTexture;                   // 20C
-		std::uint16_t                 usCurIndex;                      // 210?
-		std::uint16_t                 pad212;                          // 212
-		std::uint16_t                 usFlags;                         // 214
-		std::uint16_t                 pad216;                          // 216
-		LoadScreenDefaultProperties   DefaultTileSettings[38];         // 218
-		std::uint32_t                 m_TileCrossFadeStartTime;        // 5A8?
-		std::uint32_t                 m_SlideCount;                    // 5AC?
-		std::int32_t                  m_DelayedTipMatteUpdate;         // 5B0?
+		NiPointer<NiTexture>          spHoldTexture[4];                // 20C
+		std::uint8_t                  pad21C[0x4];                     // 21C
+		std::uint16_t                 usCurIndex;                      // 220?
+		std::uint16_t                 usFlags;                         // 222
+		LoadScreenDefaultProperties   DefaultTileSettings[38];         // 224
+		std::uint32_t                 m_TileCrossFadeStartTime;        // 5B4?
+		std::uint32_t                 m_SlideCount;                    // 5B8?
+		std::int32_t                  m_DelayedTipMatteUpdate;         // 5BC?
 	};
+	static_assert(sizeof(LoadingMenu) == 0x5C0);
 }
