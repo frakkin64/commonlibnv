@@ -169,6 +169,12 @@ namespace RE
 		virtual void DoIdle() override;                                         // 0B
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static HUDMainMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<HUDMainMenu**> singleton{ Offsets::HUDMainMenu::pInstance };
+			return *singleton;
+		}
+
 		static HUDMainMenu::HUD_MENU_MODE GetMenuMode()
 		{
 			using func_t = decltype(&HUDMainMenu::GetMenuMode);

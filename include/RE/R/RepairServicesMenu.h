@@ -27,6 +27,12 @@ namespace RE
 		virtual void DoLeave(std::int32_t aiID, Tile* apTarget) override;       // 05
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static RepairServicesMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<RepairServicesMenu**> singleton{ Offsets::RepairServicesMenu::pInstance };
+			return *singleton;
+		}
+
 		RepairServicesMenu* ctor()
 		{
 			using func_t = RepairServicesMenu*(__thiscall*)(RepairServicesMenu*);

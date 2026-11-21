@@ -162,6 +162,12 @@ namespace RE
 		virtual void DoIdle() override;                                         // 0B
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static RouletteMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<RouletteMenu**> singleton{ Offsets::RouletteMenu::pInstance };
+			return *singleton;
+		}
+
 		RouletteMenu* ctor()
 		{
 			using func_t = RouletteMenu*(__thiscall*)(RouletteMenu*);

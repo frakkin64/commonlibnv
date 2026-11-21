@@ -81,6 +81,12 @@ namespace RE
 		virtual bool DoKey(std::int32_t aiKey) override;                        // 0C
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static MessageMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<MessageMenu**> singleton{ Offsets::MessageMenu::pInstance };
+			return *singleton;
+		}
+
 		MessageMenu* ctor()
 		{
 			using func_t = MessageMenu*(__thiscall*)(MessageMenu*);

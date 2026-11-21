@@ -48,6 +48,12 @@ namespace RE
 		virtual std::int32_t GetClass() override;                               // 0D
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;  // 0E
 
+		[[nodiscard]] static DialogMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<DialogMenu**> singleton{ Offsets::DialogMenu::pInstance };
+			return *singleton;
+		}
+
 		static bool IsDialogActive()
 		{
 			using func_t = decltype(&DialogMenu::IsDialogActive);

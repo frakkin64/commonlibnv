@@ -42,6 +42,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static InventoryMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<InventoryMenu**> singleton{ Offsets::InventoryMenu::pInstance };
+			return *singleton;
+		}
+
 		static void SetCurrentTab(std::int32_t aiTab)
 		{
 			using func_t = decltype(&InventoryMenu::SetCurrentTab);

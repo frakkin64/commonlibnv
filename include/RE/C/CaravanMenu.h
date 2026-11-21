@@ -173,6 +173,12 @@ namespace RE
 		virtual bool DoGamepad(std::int32_t aiButton, float afValue) override;         // 0E
 		virtual bool DoGamepadUpEvent(std::int32_t aiButton, float afValue) override;  // 0F
 
+		[[nodiscard]] static CaravanMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<CaravanMenu**> singleton{ Offsets::CaravanMenu::pInstance };
+			return *singleton;
+		}
+
 		CaravanMenu* ctor()
 		{
 			using func_t = CaravanMenu*(__thiscall*)(CaravanMenu*);

@@ -84,6 +84,12 @@ namespace RE
 		virtual bool DoKey(std::int32_t aiKey) override;                        // 0C
 		virtual std::int32_t GetClass() override;                               // 0D
 
+		[[nodiscard]] static VATSMenu* GetSingleton() noexcept
+		{
+			static REL::Relocation<VATSMenu**> singleton{ Offsets::VATSMenu::pInstance };
+			return *singleton;
+		}
+
 		VATSMenu* ctor()
 		{
 			using func_t = VATSMenu*(__thiscall*)(VATSMenu*);
