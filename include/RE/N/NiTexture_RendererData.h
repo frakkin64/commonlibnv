@@ -14,6 +14,9 @@ namespace RE
 		public NiObject  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::NiTexture_RendererData };
+		static constexpr auto VTABLE{ VTABLE::NiTexture_RendererData };
+
 		// members
 		NiTexture*        m_pkTexture;           // 08?
 		std::uint32_t     m_uiWidth;             // 0C?

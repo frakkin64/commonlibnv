@@ -12,6 +12,9 @@ namespace RE
 	class __declspec(novtable) NiTexturingProperty_Map
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::NiTexturingProperty_Map };
+		static constexpr auto VTABLE{ VTABLE::NiTexturingProperty_Map };
+
 		virtual ~NiTexturingProperty_Map() = default;  // 00
 
 		// members

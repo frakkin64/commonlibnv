@@ -12,6 +12,9 @@ namespace RE
 		public BSExtraData  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::ExtraTeleport };
+		static constexpr auto VTABLE{ VTABLE::ExtraTeleport };
+
 		// override (BSExtraData)
 		virtual ~ExtraTeleport() = default;                     // 00
 		virtual bool Compare(BSExtraData* apCompare) override;  // 01

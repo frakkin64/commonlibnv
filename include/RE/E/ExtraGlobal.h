@@ -12,6 +12,9 @@ namespace RE
 		public BSExtraData  // 00
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::ExtraGlobal };
+		static constexpr auto VTABLE{ VTABLE::ExtraGlobal };
+
 		// override (BSExtraData)
 		virtual ~ExtraGlobal() = default;                       // 00
 		virtual bool Compare(BSExtraData* apCompare) override;  // 01

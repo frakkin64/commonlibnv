@@ -9,6 +9,9 @@ namespace RE
 	class __declspec(novtable) NiSkinPartition_Partition
 	{
 	public:
+		static constexpr auto RTTI{ RTTI::NiSkinPartition_Partition };
+		static constexpr auto VTABLE{ VTABLE::NiSkinPartition_Partition };
+
 		virtual ~NiSkinPartition_Partition() = default;  // 00
 
 		// members
