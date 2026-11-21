@@ -170,4 +170,5 @@ namespace RE
 		bool                                                     bAttached;          // 49
 		std::uint16_t                                            pad4A;              // 4A
 	};
+	static_assert(sizeof(BGSDistantTreeBlock) == 0x4C);
 }

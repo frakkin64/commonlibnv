@@ -272,6 +272,7 @@ namespace RE
 			void*                    pfSelectionTest;  // 1C
 			RaceSexMenu::MenuOption* pHighlighted;     // 20
 		};
+		static_assert(sizeof(MenuOptionList) == 0x24);
 
 		// override (Menu)
 		virtual ~RaceSexMenu() = default;                                       // 00
@@ -509,4 +510,5 @@ namespace RE
 		RaceSexMenu::ListID          eLastList;            // 120
 		FR2MatrixVTC<float>          LastFaceCoord[2][2];  // 124
 	};
+	static_assert(sizeof(RaceSexMenu) == 0x1A4);
 }

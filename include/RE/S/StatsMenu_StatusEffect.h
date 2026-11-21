@@ -32,4 +32,5 @@ namespace RE
 		StatsMenu_StatusDataList   xStatsEffected;  // 04
 		StatsMenu_NamedEffectsList xNamedEffects;   // 10
 	};
+	static_assert(sizeof(StatsMenu_StatusEffect) == 0x1C);
 }

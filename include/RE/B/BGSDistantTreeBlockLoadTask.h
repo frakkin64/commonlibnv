@@ -46,4 +46,5 @@ namespace RE
 		bool                 bFileExists;       // 45
 		std::uint16_t        pad46;             // 46
 	};
+	static_assert(sizeof(BGSDistantTreeBlockLoadTask) == 0x48);
 }

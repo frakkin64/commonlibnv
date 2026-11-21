@@ -316,4 +316,5 @@ namespace RE
 		bool                          bTutorial;       // 1DA
 		std::uint8_t                  pad1DB;          // 1DB
 	};
+	static_assert(sizeof(HackingMenu) == 0x1DC);
 }

@@ -28,4 +28,5 @@ namespace RE
 		NiPoint3*      pLocArray;       // 14
 		float*         pColorArray;     // 18
 	};
+	static_assert(sizeof(TREE_BILLBOARD_DATA) == 0x1C);
 }

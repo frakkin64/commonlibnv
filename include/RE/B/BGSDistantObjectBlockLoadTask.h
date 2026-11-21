@@ -52,4 +52,5 @@ namespace RE
 		bool                        bStingerVersion;   // 51
 		std::uint8_t                pad52[0x6];        // 52
 	};
+	static_assert(sizeof(BGSDistantObjectBlockLoadTask) == 0x58);
 }

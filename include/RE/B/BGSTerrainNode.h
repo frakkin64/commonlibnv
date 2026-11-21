@@ -231,4 +231,5 @@ namespace RE
 		bool                            bSplitNode;           // 5D
 		std::uint16_t                   pad5E;                // 5E
 	};
+	static_assert(sizeof(BGSTerrainNode) == 0x60);
 }

@@ -65,6 +65,7 @@ namespace RE
 			} ___u4;  // 10
 			std::uint16_t               pad12;          // 12
 		};
+		static_assert(sizeof(LoveTesterButton) == 0x14);
 
 		class LoveTesterLightBulbGlows
 		{
@@ -109,6 +110,7 @@ namespace RE
 			ActorValue_Index            eActorValue;     // 14?
 			std::int32_t                nThreshold;      // 18?
 		};
+		static_assert(sizeof(LoveTesterTextItem) == 0x1C);
 
 		class ActorValueButton :
 			public LoveTesterMenu::LoveTesterButton  // 00
@@ -126,6 +128,7 @@ namespace RE
 			BSSimpleArray<LoveTesterMenu::LoveTesterTextItem*, 1024> AffectedFields;  // 14?
 			ActorValue_Index                                         eActorValue;     // 24?
 		};
+		static_assert(sizeof(ActorValueButton) == 0x28);
 
 		// override (Menu)
 		virtual ~LoveTesterMenu() = default;                                    // 00

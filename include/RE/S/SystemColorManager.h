@@ -79,4 +79,5 @@ namespace RE
 		NiTPointerList<SystemColorManager_SystemColor*> SystemColorList;  // 00?
 		std::int32_t                                    iNextID;          // 0C
 	};
+	static_assert(sizeof(SystemColorManager) == 0x10);
 }
