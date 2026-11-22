@@ -648,21 +648,21 @@ namespace RE
 		bool                                  bPlayerInRadiatedWater;          // 15D
 		std::uint16_t                         pad15E;                          // 15E
 		AITaskManager                         TaskManagerAI;                   // 160
-		BSSimpleList<DialoguePackage*>        DialogPackageList;               // 102E0
-		BSSpinLock                            ActorsCloseToPlayerLock;         // 102E8
-		BSSimpleList<MobileObject*>*          pPrevmoblist;                    // 102F0
-		BSSimpleList<MobileObject*>*          pMoblist;                        // 102F4
-		LipSyncBackgroundManager              LipBackgroundManager;            // 102F8
-		bool                                  bRunScheduals;                   // 10314?
-		bool                                  bRunDetection;                   // 10315?
-		bool                                  bShowDetectionStats;             // 10316?
-		std::uint8_t                          pad10317;                        // 10317
-		Actor*                                pStatdetect;                     // 10318?
-		bool                                  bProcessHigh;                    // 1031C?
-		bool                                  bProcessLow;                     // 1031D?
-		bool                                  bProcessMHigh;                   // 1031E?
-		bool                                  bProcessMLow;                    // 1031F?
-		std::uint8_t                          pad10320[0x8C];                  // 10320
+		BSSimpleList<DialoguePackage*>        DialogPackageList;               // 102E4
+		BSSpinLock                            ActorsCloseToPlayerLock;         // 102EC?
+		BSSimpleList<MobileObject*>*          pPrevmoblist;                    // 102F4?
+		BSSimpleList<MobileObject*>*          pMoblist;                        // 102F8?
+		LipSyncBackgroundManager              LipBackgroundManager;            // 102FC?
+		std::uint8_t                          pad10318[0x88];                  // 10318
+		bool                                  bRunScheduals;                   // 103A0?
+		bool                                  bRunDetection;                   // 103A1?
+		bool                                  bShowDetectionStats;             // 103A2?
+		std::uint8_t                          pad103A3;                        // 103A3
+		Actor*                                pStatdetect;                     // 103A4?
+		bool                                  bProcessHigh;                    // 103A8?
+		bool                                  bProcessLow;                     // 103A9?
+		bool                                  bProcessMHigh;                   // 103AA?
+		bool                                  bProcessMLow;                    // 103AB?
 		bool                                  bProcessSche;                    // 103AC
 		bool                                  bShowSubtitle;                   // 103AD
 		bool                                  bUpdatingLowList;                // 103AE

@@ -47,13 +47,13 @@ namespace RE
 	public:
 		// members
 		DetectionTaskData                            TaskDataDetection;             // 00
-		AnimationTaskData                            TaskAnimationUpdate;           // 3C
-		PackageUpdateTaskData                        TaskDataPackagesUpdate;        // 74
-		ActorUpdateTaskData                          TaskDataActorUpdate;           // B8
-		ActorsScriptTaskData                         TaskDataActorsScript;          // F4
-		MovementTaskData                             TaskDataActorMovement;         // 134
-		BSTStaticFreeList<MobileObjectMessage, 4096> MessagePool;                   // 170
-		bool                                         bRunningTasksDuringRendering;  // 1017C?
-		std::uint8_t                                 pad1017D[0x3];                 // 1017D
+		AnimationTaskData                            TaskAnimationUpdate;           // 40
+		PackageUpdateTaskData                        TaskDataPackagesUpdate;        // 78
+		ActorUpdateTaskData                          TaskDataActorUpdate;           // BC
+		ActorsScriptTaskData                         TaskDataActorsScript;          // F8
+		MovementTaskData                             TaskDataActorMovement;         // 138
+		BSTStaticFreeList<MobileObjectMessage, 4096> MessagePool;                   // 174
+		bool                                         bRunningTasksDuringRendering;  // 10180
+		std::uint8_t                                 pad10181[0x3];                 // 10181
 	};
 }
