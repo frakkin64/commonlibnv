@@ -24,5 +24,6 @@ namespace RE
 		// members
 		// not placed: fNumber(absent)
 		std::int32_t iUpdated;  // 38
+		std::uint8_t pad3C[0x4];// 3C
 	};
 }

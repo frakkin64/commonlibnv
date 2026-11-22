@@ -11,7 +11,7 @@ namespace RE
 	{
 	public:
 		// members
-		std::uint8_t RawElem[8];
+		std::uint8_t RawElem[sizeof(T)];
 		BSTFreeListElem<T>* pNext;
 	};
 }
