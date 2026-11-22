@@ -55,11 +55,11 @@ namespace RE
 		NiPointer<NiShader>      m_spErrorShader;               // 14
 		std::uint8_t             pad18[0x68];                   // 18
 		NiCriticalSection        m_kRendererLock;               // 80
-		std::uint8_t             padA4[0x5C];                   // A4
+		std::uint8_t             padA0[0x60];                   // A0
 		NiCriticalSection        m_kPrecacheCriticalSection;    // 100
-		std::uint8_t             pad124[0x5C];                  // 124
+		std::uint8_t             pad120[0x60];                  // 120
 		NiCriticalSection        m_kSourceDataCriticalSection;  // 180
-		std::uint8_t             pad1A4[0x5C];                  // 1A4
+		std::uint8_t             pad1A0[0x60];                  // 1A0
 		NiRenderer::EFrameState  m_eFrameState;                 // 200
 		std::uint32_t            m_uiFrameID;                   // 204
 		bool                     m_bRenderTargetGroupActive;    // 208
